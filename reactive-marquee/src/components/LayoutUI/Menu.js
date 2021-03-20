@@ -2,12 +2,12 @@ import React from 'react';
  
 import { NavLink } from 'react-router-dom';
  
-const Menu = () => {
+const Menu = ({data}) => {
     return (
        <div>
-          <NavLink to="/Industries">Industries</NavLink>
-          <NavLink to="/">Services</NavLink>
-          <NavLink to="/About">About Us</NavLink>
+          <NavLink to={`/${data.pages[0].slug}`}>{data.pages[0].title}</NavLink>
+          <NavLink to={`/${data.pages[1].slug}`}>{data.pages[1].title}</NavLink>
+          <NavLink to={`/${data.pages[2].slug}`}>{data.pages[2].title}</NavLink>
        </div>
     );
 }

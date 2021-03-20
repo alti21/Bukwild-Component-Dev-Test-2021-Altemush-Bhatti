@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import data from './data/content.json';
- 
-import Services from './components/Services';
+import './App.css';
+import Marquee from './components/Marquee';
 import About from './components/About';
 import Industries from './components/Industries';
 import Error from './components/Error';
@@ -14,12 +14,12 @@ class App extends Component {
     console.log(data.pages[0]);
     return (      
        <BrowserRouter>
-        <div>
-          <Layout />
+        <div className="container">
+            <Layout data={data}/>
             <Switch>
-             <Route path="/" component={Services} exact/>
-             <Route path="/industries" component={Industries}/>
-             <Route path="/about" component={About}/>
+             <Route exact path={`/${data.pages[1].slug}`} render={(props) => <Marquee {...props} data={data.pages[1]} />} />
+             <Route path={`/${data.pages[0].slug}`} render={(props) => <Marquee {...props} data={data.pages[0]} />} />
+             <Route path={`/${data.pages[2].slug}`} render={(props) => <Marquee {...props} data={data.pages[2]} />} />
              <Route component={Error}/>
            </Switch>
         </div> 

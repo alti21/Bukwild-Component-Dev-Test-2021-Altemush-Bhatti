@@ -1,5 +1,15 @@
 import React from 'react';
-
-const Layout = () => (<div></div>)
-
-export default Layout;
+ 
+import { NavLink } from 'react-router-dom';
+ 
+const Navigation = () => {
+    return (
+       <div>
+          <NavLink to="/Industires">Industires</NavLink>
+          <NavLink to="/">Services</NavLink>
+          <NavLink to="/About">About Us</NavLink>
+       </div>
+    );
+}
+ 
+export default Navigation;

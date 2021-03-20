@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import data from './data/content.json';
  
 import Services from './components/Services';
 import About from './components/About';
@@ -9,6 +10,8 @@ import Layout from './components/Layout';
  
 class App extends Component {
   render() {
+   // const info = JSON.parse(data);
+    console.log(data.pages[0]);
     return (      
        <BrowserRouter>
         <div>

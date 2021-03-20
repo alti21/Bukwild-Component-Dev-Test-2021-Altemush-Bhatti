@@ -6,7 +6,7 @@ import Services from './components/Services';
 import About from './components/About';
 import Industries from './components/Industries';
 import Error from './components/Error';
-import Layout from './components/Layout';
+import Layout from './components/LayoutUI/Layout';
  
 class App extends Component {
   render() {

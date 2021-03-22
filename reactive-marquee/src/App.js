@@ -3,23 +3,46 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import data from './data/content.json';
 import './App.css';
 import Marquee from './components/Marquee';
-import About from './components/About';
-import Industries from './components/Industries';
 import Error from './components/Error';
 import Layout from './components/LayoutUI/Layout';
+import axios from 'axios';
  
 class App extends Component {
+
+  state = {
+    isLoading: true,
+    pageData: []
+  }
+
+  componentDidMount() {
+    axios.get(`https://f.v1.n0.cdn.getcloudapp.com/items/3e1W2F0W1s2U2d3R2Z46/content.json`)
+      .then(res => {
+        //const pageData = res.data;
+        //console.log(res.data);
+        this.setState({ pageData : res.data, isLoading : false });
+      })
+  }
+
+  
+
   render() {
-   // const info = JSON.parse(data);
-    console.log(data.pages[0]);
+    if (this.state.isLoading) {
+      return <div className="container">Loading...</div>;
+    }
+    console.log('hi')
+   // console.log(this.state.isLoading);
+  // console.log(this.state.pageData.pages);
+    
     return (      
        <BrowserRouter>
         <div className="container">
             <Layout data={data}/>
             <Switch>
-             <Route exact path={`/${data.pages[1].slug}`} render={(props) => <Marquee {...props} data={data.pages[1]} />} />
-             <Route path={`/${data.pages[0].slug}`} render={(props) => <Marquee {...props} data={data.pages[0]} />} />
-             <Route path={`/${data.pages[2].slug}`} render={(props) => <Marquee {...props} data={data.pages[2]} />} />
+            {this.state.pageData.pages.map(page => <Route path={`/${page.slug}`} render={(props) => <Marquee {...props} data={page} />} />    )}
+
+
+
+             
              <Route component={Error}/>
            </Switch>
         </div> 

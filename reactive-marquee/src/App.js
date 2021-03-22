@@ -23,26 +23,18 @@ class App extends Component {
       })
   }
 
-  
-
   render() {
+
     if (this.state.isLoading) {
       return <div className="container">Loading...</div>;
     }
-    console.log('hi')
-   // console.log(this.state.isLoading);
-  // console.log(this.state.pageData.pages);
     
     return (      
        <BrowserRouter>
         <div className="container">
-            <Layout data={data}/>
+            <Layout data={this.state.pageData.pages}/>
             <Switch>
-            {this.state.pageData.pages.map(page => <Route path={`/${page.slug}`} render={(props) => <Marquee {...props} data={page} />} />    )}
-
-
-
-             
+            {this.state.pageData.pages.map(page => <Route key={page.slug} path={`/${page.slug}`} render={(props) => <Marquee {...props} data={page} />} />    )}
              <Route component={Error}/>
            </Switch>
         </div> 

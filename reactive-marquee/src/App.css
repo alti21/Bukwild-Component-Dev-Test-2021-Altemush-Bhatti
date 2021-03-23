@@ -25,3 +25,17 @@
   margin: 2% 5%;
 }
 
+.slide_one {
+  background-image: url(./background-images/slide_one.jpg);
+  
+}
+.slide_two {
+  background-image: url(./background-images/slide_two.jpg);
+}
+.slide_three {
+  background-image: url(./background-images/slide_three.jpg);
+}
+
+
+
+

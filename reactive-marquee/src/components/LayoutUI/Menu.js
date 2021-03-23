@@ -1,11 +1,15 @@
 import React from 'react';
  
 import { NavLink } from 'react-router-dom';
- 
-const Menu = ({data}) => {
+
+  
+const Menu = ({data, handleClick}) => {
+   
+
     return (
        <div>
-           {data.map(page => ( <NavLink to={`/${page.slug}`}>{page.title}</NavLink> ))}
+           
+           {data.map(page => ( <NavLink to={`/${page.slug}`} key={page.slug} onClick={handleClick}>{page.title}</NavLink> ))}
 
        </div>
     );

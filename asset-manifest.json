@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/main.b3f6c824.chunk.js",
-    "main.js.map": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/main.b3f6c824.chunk.js.map",
-    "runtime-main.js": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/runtime-main.6c6c2f18.js",
-    "runtime-main.js.map": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/runtime-main.6c6c2f18.js.map",
-    "static/js/2.42ad0fd9.chunk.js": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/2.42ad0fd9.chunk.js",
-    "static/js/2.42ad0fd9.chunk.js.map": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/2.42ad0fd9.chunk.js.map",
-    "static/js/3.35aa40b8.chunk.js": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/3.35aa40b8.chunk.js",
-    "static/js/3.35aa40b8.chunk.js.map": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/3.35aa40b8.chunk.js.map",
+    "main.css": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/css/main.6d1949f2.chunk.css",
+    "main.js": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/main.6d85f760.chunk.js",
+    "main.js.map": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/main.6d85f760.chunk.js.map",
+    "runtime-main.js": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/runtime-main.274e421a.js",
+    "runtime-main.js.map": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/runtime-main.274e421a.js.map",
+    "static/js/2.79d05bb8.chunk.js": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/2.79d05bb8.chunk.js",
+    "static/js/2.79d05bb8.chunk.js.map": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/2.79d05bb8.chunk.js.map",
+    "static/js/3.46675b4b.chunk.js": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/3.46675b4b.chunk.js",
+    "static/js/3.46675b4b.chunk.js.map": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/3.46675b4b.chunk.js.map",
     "index.html": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/index.html",
-    "static/css/main.9d5b29c0.chunk.css.map": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.42ad0fd9.chunk.js.LICENSE.txt": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/2.42ad0fd9.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/media/logo.6ce24c58.svg"
+    "static/css/main.6d1949f2.chunk.css.map": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/css/main.6d1949f2.chunk.css.map",
+    "static/js/2.79d05bb8.chunk.js.LICENSE.txt": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/2.79d05bb8.chunk.js.LICENSE.txt",
+    "static/media/abc.37994532.svg": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/media/abc.37994532.svg",
+    "static/media/App.css": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/media/slide_two.b7b871cc.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6c6c2f18.js",
-    "static/js/2.42ad0fd9.chunk.js",
-    "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.b3f6c824.chunk.js"
+    "static/js/runtime-main.274e421a.js",
+    "static/js/2.79d05bb8.chunk.js",
+    "static/css/main.6d1949f2.chunk.css",
+    "static/js/main.6d85f760.chunk.js"
   ]
 }

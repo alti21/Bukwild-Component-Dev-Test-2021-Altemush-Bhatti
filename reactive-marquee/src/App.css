@@ -5,7 +5,7 @@
 .App-logo {
   
   pointer-events: none;
-  background-color: black;
+
 }
 
 .container {
@@ -13,11 +13,38 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  padding-left: 3em;
+  padding-right: 3em;
 }
 
 .layout {
   height: 20vh;
   margin: 2% 5%;
+}
+
+.navlinks {
+  display: flex;
+  flex-direction: column;
+  margin-top: .8em;
+}
+
+.navlinks__link {
+  color: #fff;
+  text-decoration: none;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.86;
+  letter-spacing: normal;
+}
+
+.navlinks__link--active {
+  color: #ffc004;
+}
+
+.navlinks__link--unactive {
+  color: #fff;
 }
 
 .marquee {
@@ -27,13 +54,15 @@
 
 .slide_one {
   background-image: url(./background-images/slide_one.jpg);
-  
+  background-size: cover;
 }
 .slide_two {
   background-image: url(./background-images/slide_two.jpg);
+  background-size: cover;
 }
 .slide_three {
   background-image: url(./background-images/slide_three.jpg);
+  background-size: cover;
 }
 
 

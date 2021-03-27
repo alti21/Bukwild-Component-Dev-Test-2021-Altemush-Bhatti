@@ -6,6 +6,7 @@ const Layout = ({data, style, handleClick}) => (
         <div className="layout" style={style}>
             <img src={logo} className="App-logo" alt="logo"/>
             <Menu data={data} handleClick={handleClick} />
+            
         </div>
     )
 

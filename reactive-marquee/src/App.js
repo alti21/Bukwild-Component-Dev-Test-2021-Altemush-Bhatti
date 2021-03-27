@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import data from './data/content.json';
 import './App.css';
 import Marquee from './components/Marquee';
 import Error from './components/Error';
 import Layout from './components/LayoutUI/Layout';
-import axios from 'axios';
+//import axios from 'axios';
  
 class App extends Component {
 
@@ -30,11 +30,14 @@ class App extends Component {
     // change background depending on which page user is on //maybe use map object to map window pathname or innertext with background image?
     this.state.pageData.pages.forEach(page => {
       if(page.title === e.target.innerText) {
-        console.log(page.blocks[0].background.replace('.jpg',''))
+        console.log(window.location.hash);
         this.setState({ backgroundClass: page.blocks[0].background.replace('.jpg','') }) 
       }
     })
   }
+
+
+  //for resusable classnames, import css classnames in this file then pass classnames as props as needed
 
   render() {
 
@@ -46,14 +49,14 @@ class App extends Component {
     if(this.state.isLoading === false && this.state.backgroundClass === '') {
 
       this.state.pageData.pages.forEach(page => {
-        if(page.slug === window.location.pathname.replace('/','')) {
+        if(page.slug === window.location.hash.replace('#/','')) {
           background = page.blocks[0].background.replace('.jpg','')
         }
       })
     }
 
     return (      
-       <BrowserRouter>
+       <HashRouter>
         <div className={`container ${this.state.backgroundClass || background}`}>
             <Layout data={this.state.pageData.pages} handleClick={this.handleClick} />
             <Switch>
@@ -61,7 +64,7 @@ class App extends Component {
              <Route component={Error}/>
            </Switch>
         </div> 
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }

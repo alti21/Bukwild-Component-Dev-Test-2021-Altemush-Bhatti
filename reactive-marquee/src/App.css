@@ -15,6 +15,7 @@
   flex-direction: column;
   padding-left: 3em;
   padding-right: 3em;
+
 }
 
 .layout {
@@ -31,7 +32,7 @@
 .navlinks__link {
   color: #fff;
   text-decoration: none;
-  font-family: Roboto, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -53,11 +54,6 @@
   border: solid 1px;
 }
 
-.marquee {
-  height: auto;
-  margin: 2% 5%;
-}
-
 .slide_one {
   background-image: url(./background-images/slide_one.jpg);
   background-size: cover;
@@ -71,6 +67,72 @@
   background-size: cover;
 }
 
+/* marquee css */
+
+.marquee {
+  height: auto;
+  margin: 2% 5%;
+  margin-bottom: 0;
+  display: grid;
+  grid-template-areas: "headline subhead"
+                       "cta cta";
+  grid-template-rows: minmax(20rem, auto) minmax(10rem, auto);
+  column-gap: 3rem;
+}
+
+/*
+.heading__wrapper {
+  
+  margin: 0 auto;
+   Flex rules 
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 50vh;
+  
+
+  for cta in grid, need min height?
+}
+*/
+.headline {
+  grid-area: headline;
+  align-self: center;
+  color: #fff;
+  font-family: Helvetica, sans-serif;
+  font-size: 5.25rem;
+  line-height: 5.25rem;
+  letter-spacing: -2.2px;
+}
+
+.subhead {
+  grid-area: subhead;
+  align-self: center;
+  color: #fff;
+  font-size: 0.875rem;
+  line-height: 1.625rem;
+  letter-spacing: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  
+}
+
+
+/*cta css*/
+
+.cta {
+  background-color: #fff;
+  color: #000;
+  grid-area: cta;
+}
+
+.cta > p {
+  position: relative;
+  top: 30%;
+  
+  
+}
 
 
 

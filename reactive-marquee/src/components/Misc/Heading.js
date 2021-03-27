@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Heading = ({headingLevel, text}) => {
+const Heading = ({headingLevel, text, className}) => {
 
     const Title = headingLevel;
 
     return (
-    <Title>{text}</Title>
+    <Title className={className}>{text}</Title>
     )
 }
 

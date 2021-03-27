@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Link = () => {
-    let style = "btn";
+   // let style = "btn";
     let text = "Contact Us"
     return (
        

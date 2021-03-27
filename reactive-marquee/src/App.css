@@ -47,6 +47,12 @@
   color: #fff;
 }
 
+.navlinks__link--contact {
+  float: right;
+  padding: 0.5em 1.75em;
+  border: solid 1px;
+}
+
 .marquee {
   height: auto;
   margin: 2% 5%;

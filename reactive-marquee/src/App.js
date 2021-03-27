@@ -17,7 +17,6 @@ class App extends Component {
     isLoading: true,
     pageData: [],
     backgroundClass: '', //initial background image
-    activeLink: false
   }
 
   componentDidMount() {
@@ -32,7 +31,7 @@ class App extends Component {
     this.state.pageData.pages.forEach(page => {
       if(page.title === e.target.innerText) {
         console.log(page.blocks[0].background.replace('.jpg',''))
-        this.setState({ backgroundClass: page.blocks[0].background.replace('.jpg',''), activeLink: true }) 
+        this.setState({ backgroundClass: page.blocks[0].background.replace('.jpg','') }) 
       }
     })
   }
@@ -56,7 +55,7 @@ class App extends Component {
     return (      
        <BrowserRouter>
         <div className={`container ${this.state.backgroundClass || background}`}>
-            <Layout data={this.state.pageData.pages} handleClick={this.handleClick} active={this.state.activeLink}/>
+            <Layout data={this.state.pageData.pages} handleClick={this.handleClick} />
             <Switch>
                 {this.state.pageData.pages.map(page => <Route key={page.slug} path={`/${page.slug}`} render={(props) => <Marquee {...props} data={page} />} />  )}
              <Route component={Error}/>

@@ -19,8 +19,8 @@
 }
 
 .layout {
-  height: 20vh;
-  margin: 20px 5%;
+  height: 16vh;
+  margin: 2vh 5%;
 }
 
 .navlinks {
@@ -38,6 +38,7 @@
   font-style: normal;
   line-height: 1.86;
   letter-spacing: normal;
+  font-size: 1.2rem;
 }
 
 .navlinks__link--active {
@@ -70,17 +71,22 @@
 /* marquee css */
 
 .marquee {
-  height: auto;
-  margin: 20px 5%;
+  height: 76vh;
+  margin: 2vh 5%;
   margin-bottom: 0;
   display: grid;
   grid-template-areas: "headline subhead"
                        "cta cta";
-  grid-template-rows: minmax(20rem, auto) minmax(10rem, auto);
+ 
   column-gap: 3rem;
+  flex: 1 1;
+  -webkit-flex: 1 1;
 }
 
 /*
+ grid-template-rows: minmax(20rem, auto) minmax(50%, auto);
+
+
 .heading__wrapper {
   
   margin: 0 auto;
@@ -125,11 +131,23 @@
   background-color: #fff;
   color: #000;
   grid-area: cta;
+  display: flex;
+  flex-direction: row;
 }
 
 .cta > p {
   position: relative;
-  top: 30%;
+  align-self: center;
+
+
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2rem;
+    letter-spacing: -0.63px;
+  
   
   
 }

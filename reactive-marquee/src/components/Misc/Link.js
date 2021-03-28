@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Link = () => {
+const Link = ({text, className}) => {
    // let style = "btn";
-    let text = "Contact Us"
+    
     return (
        
     
-        <a href="/#" className="navlinks__link navlinks__link--contact">{text}</a>
+        <a href="/#" className={className}>{text}</a>
     )
 
 }

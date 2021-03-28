@@ -6,7 +6,7 @@ import Link from '../Misc/Link';
 const Layout = ({data, style, handleClick}) => (
         <div className="layout" style={style}>
             <img src={logo} className="App-logo" alt="logo"/>
-            <Link />
+            <Link text="Contact Us" className="navlinks__link navlinks__link--contact"/>
             <Menu data={data} handleClick={handleClick} />
             
         </div>

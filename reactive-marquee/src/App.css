@@ -55,8 +55,6 @@
   border: solid 1px;
 }
 
-
-
 .slide_one {
   background-image: url(./background-images/slide_one.jpg);
   background-size: cover;
@@ -80,6 +78,7 @@
   grid-template-areas: "headline subhead"
                        "cta cta";
   grid-template-rows: minmax(auto, auto) 20vh;
+  grid-template-columns: 2fr 1fr;
   column-gap: 3rem;
   flex: 1 1;
   -webkit-flex: 1 1;
@@ -125,15 +124,12 @@
   position: relative;
   margin: 0 3vw;
   font-family: inherit;
-    font-size: 1.5rem;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 2rem;
-    letter-spacing: -0.63px;
-  
-  
-  
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2rem;
+  letter-spacing: -0.63px;
 }
 
 .navlinks__link--talk {
@@ -147,6 +143,15 @@
   line-height: 1.82;
   letter-spacing: 1px;
   text-transform: uppercase;
+  margin: 0 3vw;
+}
+
+.navlinks__link--talk > i {
+  color: #ffc004;
+  position: relative;
+  font-size: 1.8rem;
+  top: 1.1vh;
+  left: .8vw;
 }
 
 @media only screen and (max-width: 720px) {

@@ -37,11 +37,9 @@ class App extends Component {
     })
   }
 
-
-  //for resusable classnames, import css classnames in this file then pass classnames as props as needed
-
   render() {
 
+    // render during AJAX request
     if (this.state.isLoading) {
       return <div className="container">Loading...</div>;
     }

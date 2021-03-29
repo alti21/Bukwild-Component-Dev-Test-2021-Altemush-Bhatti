@@ -19,6 +19,7 @@
 }
 
 .layout {
+  
   height: 16vh;
   margin: 2vh 5%;
 }
@@ -71,6 +72,7 @@
 /* marquee css */
 
 .marquee {
+  
   height: 76vh;
   margin: 2vh 5%;
   margin-bottom: 0;
@@ -167,6 +169,7 @@
                          "cta"
                          "cta";
     grid-template-rows: minmax(auto,auto) minmax(20vh,auto) 10vh 10vh;
+    grid-template-columns: auto;
   }
 
   .headline {

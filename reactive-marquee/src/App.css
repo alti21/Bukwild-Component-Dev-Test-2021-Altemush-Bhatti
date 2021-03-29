@@ -85,24 +85,6 @@
   -webkit-flex: 1 1;
 }
 
-/*
- grid-template-rows: minmax(20rem, auto) minmax(50%, auto);
-
-
-.heading__wrapper {
-  
-  margin: 0 auto;
-   Flex rules 
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  height: 50vh;
-  
-
-  for cta in grid, need min height?
-}
-*/
 .headline {
   grid-area: headline;
   align-self: center;

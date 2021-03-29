@@ -5,13 +5,9 @@ import './App.css';
 import Marquee from './components/Marquee';
 import Error from './components/Error';
 import Layout from './components/LayoutUI/Layout';
-//import axios from 'axios';
+import axios from 'axios';
  
 class App extends Component {
-
-  config = {
-    headers: {'Access-Control-Allow-Origin': '*'}
-};
 
   state = {
     isLoading: true,
@@ -20,10 +16,15 @@ class App extends Component {
   }
 
   componentDidMount() {
-    //axios.get(`https://f.v1.n0.cdn.getcloudapp.com/items/3e1W2F0W1s2U2d3R2Z46/content.json`, this.config)
-     // .then(res => {
-        this.setState({ pageData : data, isLoading : false });
-     // })
+    axios.get(`https://f.v1.n0.cdn.getcloudapp.com/items/3e1W2F0W1s2U2d3R2Z46/content.json`)
+      .then(res => { 
+        this.setState({ pageData : res.data, isLoading : false });
+      })
+      .catch(error => {
+        console.log('Error', error);
+        // just in case axios fails to fetch data, log an error and pull data from local json file instead
+        this.setState({ pageData : data, isLoading : false }); 
+      })
   }
 
   handleClick = (e) => {

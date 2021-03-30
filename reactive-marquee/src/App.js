@@ -4,8 +4,9 @@ import data from './data/content.json';
 import './App.css';
 //import Marquee from './components/Marquee';
 import Error from './components/Error';
-import Layout from './components/LayoutUI/Layout';
+//import Layout from './components/LayoutUI/Layout';
 import axios from 'axios';
+const Layout = React.lazy(() => import('./components/LayoutUI/Layout'));
 const Marquee = React.lazy(() => import('./components/Marquee'));
 
 class App extends Component {
@@ -40,7 +41,6 @@ class App extends Component {
 
   render() {
 
-    // render during AJAX request
     if (this.state.isLoading) {
       return <div className="container">Loading...</div>;
     }
@@ -54,15 +54,16 @@ class App extends Component {
       })
     }
 
+    //Use HashRouter to establish 3 routes, one for each page. Pass data for each page in as props
     return (      
        <HashRouter>
         <div className={`container ${this.state.backgroundClass || background}`}>
+          <Suspense fallback={<div>Loading...</div>}> 
             <Layout data={this.state.pageData.pages} handleClick={this.handleClick} />
-            <Suspense fallback={<div>Loading...</div>}>
-            <Switch>
-                {this.state.pageData.pages.map(page => <Route key={page.slug} path={`/${page.slug}`} render={(props) => <Marquee {...props} data={page} />} />  )}
-             <Route component={Error}/>
-           </Switch>
+              <Switch>
+                  {this.state.pageData.pages.map(page => <Route key={page.slug} path={`/${page.slug}`} render={(props) => <Marquee {...props} data={page} />} />  )}
+              <Route component={Error}/>
+            </Switch>
            </Suspense>
         </div> 
       </HashRouter>

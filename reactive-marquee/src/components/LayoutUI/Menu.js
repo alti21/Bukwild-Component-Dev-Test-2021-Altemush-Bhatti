@@ -1,26 +1,20 @@
 import React from 'react';
- 
 import { NavLink } from 'react-router-dom';
 
-  
-const Menu = ({data, handleClick}) => {
-   
-    // if(page.slug === window.location.pathname.replace('/','')) {
-    //     background = page.blocks[0].background.replace('.jpg','')
-    //   }
-
-    return (
-       <div className="navlinks">   
-         {data.map(page => (<NavLink 
+const Menu = ({data, handleClick}) => (
+   <div className="navlinks">   
+      {data.map(page => (
+                           <NavLink 
                               to={`/${page.slug}`} 
                               key={page.slug} 
                               onClick={handleClick} 
                               className={page.slug === window.location.hash.replace('#/','') ? "link__menu link--active" : "link__menu link--unactive"}>
                                  {page.title}
                            </NavLink> 
-                           ))}
-       </div>
-    );
-}
- 
+                        )
+               )
+      }
+   </div>
+)
+
 export default Menu;

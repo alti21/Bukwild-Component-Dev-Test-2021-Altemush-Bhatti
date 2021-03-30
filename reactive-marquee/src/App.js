@@ -33,10 +33,22 @@ class App extends Component {
     // change background depending on which page user is on //maybe use map object to map window pathname or innertext with background image?
     this.state.pageData.pages.forEach(page => {
       if(page.title === e.target.innerText) {
-        console.log(window.location.hash);
         this.setState({ backgroundClass: page.blocks[0].background.replace('.jpg','') }) 
       }
     })
+  }
+
+  //for initial background render
+  initialBackground = () => {
+    let background = ''
+    if(this.state.isLoading === false && this.state.backgroundClass === '') {
+      this.state.pageData.pages.forEach(page => {
+        if(page.slug === window.location.hash.replace('#/','')) {
+          background = page.blocks[0].background.replace('.jpg','')
+        }
+      })
+    }
+    return background;
   }
 
   render() {
@@ -45,19 +57,10 @@ class App extends Component {
       return <div className="container">Loading...</div>;
     }
 
-    let background = ''//for initial background render
-    if(this.state.isLoading === false && this.state.backgroundClass === '') {
-      this.state.pageData.pages.forEach(page => {
-        if(page.slug === window.location.hash.replace('#/','')) {
-          background = page.blocks[0].background.replace('.jpg','')
-        }
-      })
-    }
-
     //Use HashRouter to establish 3 routes, one for each page. Pass data for each page in as props
     return (      
        <HashRouter>
-        <div className={`container ${this.state.backgroundClass || background}`}>
+        <div className={`container ${this.state.backgroundClass || this.initialBackground()}`}>
           <Suspense fallback={<div>Loading...</div>}> 
             <Layout data={this.state.pageData.pages} handleClick={this.handleClick} />
               <Switch>

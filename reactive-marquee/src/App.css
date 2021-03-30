@@ -38,6 +38,11 @@
   margin: 2vh 8%;
 }
 
+.App-logo {
+  width: 77px;
+  height: 39px;
+}
+
 .navlinks {
   display: flex;
   flex-direction: column;

@@ -1,28 +1,30 @@
 {
   "files": {
     "main.css": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/css/main.86d736c8.chunk.css",
-    "main.js": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/main.d208e843.chunk.js",
-    "main.js.map": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/main.d208e843.chunk.js.map",
-    "runtime-main.js": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/runtime-main.b89e441e.js",
-    "runtime-main.js.map": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/runtime-main.b89e441e.js.map",
-    "static/js/2.8459ef65.chunk.js": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/2.8459ef65.chunk.js",
-    "static/js/2.8459ef65.chunk.js.map": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/2.8459ef65.chunk.js.map",
-    "static/js/3.050e14da.chunk.js": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/3.050e14da.chunk.js",
-    "static/js/3.050e14da.chunk.js.map": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/3.050e14da.chunk.js.map",
-    "static/js/4.669800f9.chunk.js": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/4.669800f9.chunk.js",
-    "static/js/4.669800f9.chunk.js.map": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/4.669800f9.chunk.js.map",
-    "static/js/5.c38eefef.chunk.js": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/5.c38eefef.chunk.js",
-    "static/js/5.c38eefef.chunk.js.map": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/5.c38eefef.chunk.js.map",
+    "main.js": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/main.7df0eeff.chunk.js",
+    "main.js.map": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/main.7df0eeff.chunk.js.map",
+    "runtime-main.js": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/runtime-main.afd2aeea.js",
+    "runtime-main.js.map": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/runtime-main.afd2aeea.js.map",
+    "static/js/2.3aaad263.chunk.js": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/2.3aaad263.chunk.js",
+    "static/js/2.3aaad263.chunk.js.map": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/2.3aaad263.chunk.js.map",
+    "static/js/3.02d9ec44.chunk.js": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/3.02d9ec44.chunk.js",
+    "static/js/3.02d9ec44.chunk.js.map": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/3.02d9ec44.chunk.js.map",
+    "static/js/4.accadbc7.chunk.js": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/4.accadbc7.chunk.js",
+    "static/js/4.accadbc7.chunk.js.map": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/4.accadbc7.chunk.js.map",
+    "static/js/5.5ad3c7da.chunk.js": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/5.5ad3c7da.chunk.js",
+    "static/js/5.5ad3c7da.chunk.js.map": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/5.5ad3c7da.chunk.js.map",
+    "static/js/6.21f2994d.chunk.js": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/6.21f2994d.chunk.js",
+    "static/js/6.21f2994d.chunk.js.map": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/6.21f2994d.chunk.js.map",
     "index.html": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/index.html",
     "static/css/main.86d736c8.chunk.css.map": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/css/main.86d736c8.chunk.css.map",
-    "static/js/2.8459ef65.chunk.js.LICENSE.txt": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/2.8459ef65.chunk.js.LICENSE.txt",
+    "static/js/2.3aaad263.chunk.js.LICENSE.txt": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/2.3aaad263.chunk.js.LICENSE.txt",
     "static/media/abc.37994532.svg": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/media/abc.37994532.svg",
     "static/media/App.css": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/media/slide_two.e8ba747f.webp"
   },
   "entrypoints": [
-    "static/js/runtime-main.b89e441e.js",
-    "static/js/2.8459ef65.chunk.js",
+    "static/js/runtime-main.afd2aeea.js",
+    "static/js/2.3aaad263.chunk.js",
     "static/css/main.86d736c8.chunk.css",
-    "static/js/main.d208e843.chunk.js"
+    "static/js/main.7df0eeff.chunk.js"
   ]
 }

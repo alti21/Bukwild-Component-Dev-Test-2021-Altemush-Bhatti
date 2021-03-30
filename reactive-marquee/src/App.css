@@ -1,3 +1,8 @@
+.preload-01 { background: url(./background-images/slide_one.webp) no-repeat -9999px -9999px; }
+.preload-02 { background: url(./background-images/slide_two.webp) no-repeat -9999px -9999px; }
+.preload-03 { background: url(./background-images/slide_three.webp) no-repeat -9999px -9999px; }
+
+
 /*
 
   Section: Container Styles
@@ -134,7 +139,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  animation: flip .5s ease-out .7s forwards;
+  animation: flip .5s ease-out .5s forwards;
 }
 
 .cta__text {

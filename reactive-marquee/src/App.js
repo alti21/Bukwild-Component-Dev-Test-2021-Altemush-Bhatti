@@ -46,7 +46,7 @@ class App extends Component {
       return <div className="container">Loading...</div>;
     }
 
-    let background = ''//for initial background render
+    let background = 'preload-01 preload-02 preload-03'//for initial background render
     if(this.state.isLoading === false && this.state.backgroundClass === '') {
       this.state.pageData.pages.forEach(page => {
         if(page.slug === window.location.hash.replace('#/','')) {

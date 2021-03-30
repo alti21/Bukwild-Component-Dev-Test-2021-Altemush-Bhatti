@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/css/main.9d4f417d.chunk.css",
-    "main.js": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/main.f4071104.chunk.js",
-    "main.js.map": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/main.f4071104.chunk.js.map",
+    "main.js": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/main.d208e843.chunk.js",
+    "main.js.map": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/main.d208e843.chunk.js.map",
     "runtime-main.js": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/runtime-main.b89e441e.js",
     "runtime-main.js.map": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/runtime-main.b89e441e.js.map",
     "static/js/2.8459ef65.chunk.js": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/2.8459ef65.chunk.js",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.b89e441e.js",
     "static/js/2.8459ef65.chunk.js",
     "static/css/main.9d4f417d.chunk.css",
-    "static/js/main.f4071104.chunk.js"
+    "static/js/main.d208e843.chunk.js"
   ]
 }

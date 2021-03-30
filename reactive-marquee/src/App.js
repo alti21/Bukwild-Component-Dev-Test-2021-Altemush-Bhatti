@@ -8,7 +8,6 @@ import Layout from './components/LayoutUI/Layout';
 import axios from 'axios';
 const Marquee = React.lazy(() => import('./components/Marquee'));
 
- 
 class App extends Component {
 
   state = {
@@ -46,7 +45,7 @@ class App extends Component {
       return <div className="container">Loading...</div>;
     }
 
-    let background = 'preload-01 preload-02 preload-03'//for initial background render
+    let background = ''//for initial background render
     if(this.state.isLoading === false && this.state.backgroundClass === '') {
       this.state.pageData.pages.forEach(page => {
         if(page.slug === window.location.hash.replace('#/','')) {

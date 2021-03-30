@@ -45,6 +45,11 @@
   animation: slidein-left .5s ease-out;
 }
 
+.navlinks > a {
+  width: 10%;
+ white-space: nowrap;
+}
+
 .link__menu {
   color: #fff;
   text-decoration: none;

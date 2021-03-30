@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/css/main.91e43eb2.chunk.css",
-    "main.js": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/main.fc6393fd.chunk.js",
-    "main.js.map": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/main.fc6393fd.chunk.js.map",
+    "main.css": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/css/main.9d4f417d.chunk.css",
+    "main.js": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/main.46baf271.chunk.js",
+    "main.js.map": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/main.46baf271.chunk.js.map",
     "runtime-main.js": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/runtime-main.797d5636.js",
     "runtime-main.js.map": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/runtime-main.797d5636.js.map",
     "static/js/2.96c44d61.chunk.js": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/2.96c44d61.chunk.js",
@@ -10,15 +10,15 @@
     "static/js/3.7ed5e093.chunk.js": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/3.7ed5e093.chunk.js",
     "static/js/3.7ed5e093.chunk.js.map": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/3.7ed5e093.chunk.js.map",
     "index.html": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/index.html",
-    "static/css/main.91e43eb2.chunk.css.map": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/css/main.91e43eb2.chunk.css.map",
+    "static/css/main.9d4f417d.chunk.css.map": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/css/main.9d4f417d.chunk.css.map",
     "static/js/2.96c44d61.chunk.js.LICENSE.txt": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/js/2.96c44d61.chunk.js.LICENSE.txt",
     "static/media/abc.37994532.svg": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/media/abc.37994532.svg",
-    "static/media/App.css": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/media/slide_two.b7b871cc.jpg"
+    "static/media/App.css": "/Bukwild-Component-Dev-Test-2021-Altemush-Bhatti/static/media/slide_two.e8ba747f.webp"
   },
   "entrypoints": [
     "static/js/runtime-main.797d5636.js",
     "static/js/2.96c44d61.chunk.js",
-    "static/css/main.91e43eb2.chunk.css",
-    "static/js/main.fc6393fd.chunk.js"
+    "static/css/main.9d4f417d.chunk.css",
+    "static/js/main.46baf271.chunk.js"
   ]
 }

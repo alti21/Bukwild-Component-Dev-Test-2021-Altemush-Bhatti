@@ -44,9 +44,8 @@ class App extends Component {
       return <div className="container">Loading...</div>;
     }
 
-    let background = ''//for initial background
+    let background = ''//for initial background render
     if(this.state.isLoading === false && this.state.backgroundClass === '') {
-
       this.state.pageData.pages.forEach(page => {
         if(page.slug === window.location.hash.replace('#/','')) {
           background = page.blocks[0].background.replace('.jpg','')

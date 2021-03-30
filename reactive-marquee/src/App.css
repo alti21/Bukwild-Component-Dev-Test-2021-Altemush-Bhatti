@@ -13,15 +13,15 @@
 }
 
 .slide_one {
-  background-image: url(./background-images/slide_one.jpg);
+  background-image: url(./background-images/slide_one.webp);
   background-size: cover;
 }
 .slide_two {
-  background-image: url(./background-images/slide_two.jpg);
+  background-image: url(./background-images/slide_two.webp);
   background-size: cover;
 }
 .slide_three {
-  background-image: url(./background-images/slide_three.jpg);
+  background-image: url(./background-images/slide_three.webp);
   background-size: cover;
 }
 

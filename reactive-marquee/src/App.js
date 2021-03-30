@@ -1,11 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component, Suspense } from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import data from './data/content.json';
 import './App.css';
-import Marquee from './components/Marquee';
+//import Marquee from './components/Marquee';
 import Error from './components/Error';
 import Layout from './components/LayoutUI/Layout';
 import axios from 'axios';
+const Marquee = React.lazy(() => import('./components/Marquee'));
+
  
 class App extends Component {
 
@@ -57,10 +59,12 @@ class App extends Component {
        <HashRouter>
         <div className={`container ${this.state.backgroundClass || background}`}>
             <Layout data={this.state.pageData.pages} handleClick={this.handleClick} />
+            <Suspense fallback={<div>Loading...</div>}>
             <Switch>
                 {this.state.pageData.pages.map(page => <Route key={page.slug} path={`/${page.slug}`} render={(props) => <Marquee {...props} data={page} />} />  )}
              <Route component={Error}/>
            </Switch>
+           </Suspense>
         </div> 
       </HashRouter>
     );

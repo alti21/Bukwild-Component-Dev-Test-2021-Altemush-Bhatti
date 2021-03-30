@@ -5,7 +5,7 @@ import { BsArrowRight } from "react-icons/bs";
 const CTA = ({text}) => (
     <div className="cta">
         <p className="cta__text">{text}</p>
-        <Link text="Let's talk." className="navlinks__link--talk" icon={ <BsArrowRight /> }/>
+        <Link text="Let's talk." className="link__talk" icon={ <BsArrowRight /> } iconClass="link__talk--icon"/>
     </div>
 )
 

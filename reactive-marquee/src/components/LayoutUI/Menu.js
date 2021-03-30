@@ -10,10 +10,15 @@ const Menu = ({data, handleClick}) => {
     //   }
 
     return (
-       <div className="navlinks">
-           
-    {data.map(page => (<NavLink to={`/${page.slug}`} key={page.slug} onClick={handleClick} className={page.slug === window.location.hash.replace('#/','') ? "navlinks__link navlinks__link--active" : "navlinks__link navlinks__link--unactive"}>{page.title}</NavLink> ))}
-
+       <div className="navlinks">   
+         {data.map(page => (<NavLink 
+                              to={`/${page.slug}`} 
+                              key={page.slug} 
+                              onClick={handleClick} 
+                              className={page.slug === window.location.hash.replace('#/','') ? "link__menu link--active" : "link__menu link--unactive"}>
+                                 {page.title}
+                           </NavLink> 
+                           ))}
        </div>
     );
 }

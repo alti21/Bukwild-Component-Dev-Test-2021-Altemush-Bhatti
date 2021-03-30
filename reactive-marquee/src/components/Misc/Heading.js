@@ -5,7 +5,7 @@ const Heading = ({headingLevel, text, className}) => {
     const Title = headingLevel;
 
     return (
-    <Title className={className}>{text}</Title>
+        <Title className={className}>{text}</Title>
     )
 }
 

@@ -1,46 +1,15 @@
+/*
+
+  Section: Container Styles
+  Purpose: To style the container and add the background images
+
+*/
+
 .container {
   background-color: rgb(177, 202, 183);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
-
-.layout {
-  max-width: calc(1440px - 16%);
-  height: 16vh;
-  margin: 2vh 8%;
-}
-
-.navlinks {
-  display: flex;
-  flex-direction: column;
-  margin-top: .8em;
-  animation: slidein-left .5s ease-out;
-}
-
-.navlinks__link {
-  color: #fff;
-  text-decoration: none;
-  font-family: Helvetica, sans-serif;
-  font-weight: bold;
-  line-height: 1.86;
-  font-size: 1.2rem;
-}
-
-.navlinks__link--active {
-  color: #ffc004;
-}
-
-.navlinks__link--unactive {
-  color: #fff;
-}
-
-.navlinks__link--contact {
-  float: right;
-  padding: 0.5em 1.75em;
-  border: solid 1px;
-  opacity: 0;
-  animation: slidein-right .5s ease-out .3s forwards;
 }
 
 .slide_one {
@@ -56,7 +25,57 @@
   background-size: cover;
 }
 
-/* marquee css */
+/*
+
+  Section: Layout Styles
+  Purpose: To style the Layout component and navigation links that are contained within the component
+
+*/
+
+.layout {
+  max-width: calc(1440px - 16%);
+  height: 16vh;
+  margin: 2vh 8%;
+}
+
+.navlinks {
+  display: flex;
+  flex-direction: column;
+  margin-top: .8em;
+  animation: slidein-left .5s ease-out;
+}
+
+.link__menu {
+  color: #fff;
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  line-height: 1.86;
+  font-size: 1.2rem;
+}
+
+.link--active {
+  color: #ffc004;
+}
+
+.link--unactive {
+  color: #fff;
+}
+
+.link__contact {
+  float: right;
+  padding: 0.5em 1.75em;
+  border: solid 1px;
+  opacity: 0;
+  animation: slidein-right .5s ease-out .3s forwards;
+}
+
+/*
+
+  Section: Marquee Styles
+  Purpose: To style the Marquee component and headings that are contained within the component
+
+*/
 
 .marquee {
   max-width: calc(1440px - 16%);
@@ -90,12 +109,16 @@
   font-size: 0.9rem;
   line-height: 1.625rem;
   font-weight: normal;
-
   opacity: 0;
   animation: slidein-right .5s ease-out .3s forwards;
 }
 
-/*cta css*/
+/*
+
+  Section: Call to Action (CTA) Box Styles
+  Purpose: To style the Call to Action (CTA) Box component and text and link contained within the component
+
+*/
 
 .cta {
   opacity: 0;
@@ -117,7 +140,7 @@
   letter-spacing: -0.63px;
 }
 
-.navlinks__link--talk {
+.link__talk {
   text-decoration: none;
   color: #000;
   font-family: Helvetica, sans-serif;
@@ -128,13 +151,20 @@
   margin: 0 3vw;
 }
 
-.navlinks__link--talk > i {
+.link__talk--icon {
   color: #ffc004;
   position: relative;
   font-size: 1.8rem;
   top: 1.1vh;
   left: .8vw;
 }
+
+/*
+
+  Section: Media Query
+  Purpose: To make the page responsive for narrower viewports
+
+*/
 
 @media only screen and (max-width: 720px) {
   .container {
@@ -164,10 +194,17 @@
     justify-content: space-evenly;
   }
 
-  .navlinks__link--talk {
+  .link__talk {
     align-self: start;
   }
 }
+
+/*
+
+  Section: Animations
+  Purpose: To give the elements animations on page render
+
+*/
 
 @keyframes slidein-left {
   from {

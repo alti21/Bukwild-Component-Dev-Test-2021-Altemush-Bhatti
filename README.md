@@ -1,4 +1,4 @@
-# Bukwild-Component-Dev-Test-2021-Altemush-Bhatti
+# Reactive Marquee
 A reactive marquee component built with React
 
 ## Installation

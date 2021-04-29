@@ -1,6 +1,8 @@
 # Reactive Marquee
 A reactive marquee component built with React
 
+https://alti21.github.io/Reactive-Marquee/
+
 ## Installation
 
 Install [npm](https://www.npmjs.com/) first using:
@@ -26,13 +28,17 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ## Building the Application for Production 
 
-### `npm run build`
+### `npm run predeploy`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
+
+### `npm run deploy`
+
+Deploys the application and hosts it on github pages.
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
